@@ -1,0 +1,27 @@
+.tryangle-container {
+  display:none;
+}
+
+@media (min-width:1510px) {
+  .tryangle-container {
+    display:block;
+    height:550px;
+    position:absolute;
+    width:100%;
+  
+    .big-tryangle {
+      bottom:0px;
+      height:100%;
+      left:0px;
+      position:absolute;
+      
+    }
+  
+    .small-tryangle {
+      bottom:25px;
+      height:100%;
+      left:0px;
+      position:absolute;
+    }
+  }
+}

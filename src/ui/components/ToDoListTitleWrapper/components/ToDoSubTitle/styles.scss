@@ -1,0 +1,23 @@
+.to-do-sub-title {
+  color:white;
+  font-size:16px;
+  text-align:center;
+}
+
+@media (min-width:500px) {
+  .to-do-sub-title {
+    font-size:18px;
+  }
+}
+
+@media (min-width:700px) {
+  .to-do-sub-title {
+    font-size:20px;
+  }
+}
+
+@media (min-width:950px) {
+  .to-do-sub-title {
+    font-size:24px;
+  }
+}

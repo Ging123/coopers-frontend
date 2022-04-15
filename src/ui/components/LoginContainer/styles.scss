@@ -1,0 +1,10 @@
+@import '../../styles/effects.scss';
+@import '../../styles/colors.scss';
+
+.create-an-account {
+  @extend %underline-on-hover;
+  color:$main-green;
+  font-weight:600;
+  margin-top:10px;
+  text-align:center;
+}

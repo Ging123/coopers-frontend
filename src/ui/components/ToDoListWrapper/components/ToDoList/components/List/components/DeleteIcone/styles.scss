@@ -1,0 +1,17 @@
+@import '../../../../../../../../styles/effects.scss';
+
+.list > .task {
+
+  &:hover > .delete-card-icone {
+    @extend %less-opacity-on-active-or-hover;
+    display:block;
+    position:absolute;
+    right:5px;
+    top:5px;
+    z-index:2;
+  }
+
+  & > .delete-card-icone {
+    display:none;
+  }
+}

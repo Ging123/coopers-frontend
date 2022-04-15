@@ -1,0 +1,17 @@
+@import '../../../../../../styles/containers.scss';
+@import '../../../../../../styles/colors.scss';
+
+.get-in-touch-title-container > .envelope-container {
+  @include flex(row, center, center);
+  display:none;
+}
+
+@media(min-width:320px) {
+  .get-in-touch-title-container > .envelope-container {
+    background:$main-green;
+    border-radius:4px;
+    display:flex;
+    height:60px;
+    width:60px;
+  }
+}

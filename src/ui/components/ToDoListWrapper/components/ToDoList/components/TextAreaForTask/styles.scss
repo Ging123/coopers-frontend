@@ -1,0 +1,17 @@
+@import '../../../../../../styles/containers.scss';
+@import '../../../../../../styles/effects.scss';
+
+.to-do-list > .text-area-for-task-container {
+  
+  & > .text-area-of-task {
+    margin-bottom:10px;
+  }
+
+  & > .container-of-button-and-cross {
+    @include flex(row, space-between, center);
+
+    & > .close-icone {
+      @extend %less-opacity-on-active-or-hover;
+    }
+  }
+}

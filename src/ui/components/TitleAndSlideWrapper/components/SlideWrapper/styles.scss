@@ -1,0 +1,30 @@
+@import '../../../../styles/containers.scss';
+
+.slide-wrapper {
+  display:none;
+}
+
+@media (min-width:950px) {
+  .slide-wrapper {
+    @include flex(row, right, center);
+    height:482px;
+    position:relative;
+    width:50%;
+    z-index:2;
+
+    & > img {
+      height:100%;
+      position:absolute;
+      transition:opacity .5s;
+      width:443px;
+
+      &.hide {
+        opacity:0;
+      }
+
+      &.show {
+        opacity:1;
+      }
+    }
+  }
+}

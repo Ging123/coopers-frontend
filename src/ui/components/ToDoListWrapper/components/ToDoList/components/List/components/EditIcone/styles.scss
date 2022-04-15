@@ -1,0 +1,18 @@
+@import '../../../../../../../../styles/effects.scss';
+
+.list > .task {
+
+  &:hover > .edit-icone {
+    @extend %less-opacity-on-active-or-hover;
+    position:absolute;
+    display:block;
+    position:absolute;
+    right:35px;
+    top:5px;
+    z-index:2;
+  }
+
+  & > .edit-icone {
+    display:none;
+  }
+}

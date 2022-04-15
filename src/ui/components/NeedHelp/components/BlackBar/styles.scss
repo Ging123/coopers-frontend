@@ -1,0 +1,13 @@
+.need-help > .black-bar {
+  height:246px;
+  position:absolute;
+  top:-30px;
+  width:100%;
+  z-index:1;
+}
+
+@media(min-width:1370px) {
+  .need-help > .black-bar {
+    display:none;
+  }
+}

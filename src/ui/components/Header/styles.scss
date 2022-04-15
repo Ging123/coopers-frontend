@@ -1,0 +1,28 @@
+@import '../../styles/containers.scss';
+
+.header {
+  @include flex(row, space-between, center);
+  padding:15px;
+  width:100%;
+
+  & > .login-icone, .logout-icon {
+    cursor:pointer;
+    font-size:30px;
+  }
+}
+
+@media (max-width:195px) {
+  .header {
+    flex-direction:column;
+  }
+}
+
+@media (min-width:950px) {
+  .header {
+    padding:15px 60px;
+
+    & > .login-icone, .logout-icon {
+      display:none;
+    }
+  }
+}

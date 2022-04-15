@@ -1,0 +1,51 @@
+@import '../../../../styles/containers.scss';
+@import '../../../../styles/colors.scss';
+
+.login-container {
+  .container {
+    width:100%;
+  }
+
+  & > .container > form {
+    @include flex(column, center, center);
+
+    & > .input {
+      width:100%;
+
+      & > div:first-child {
+        font-weight:600;
+      }
+
+      & > .default-input {
+        border:1px solid $gray;
+        margin-bottom:20px;
+      }
+    }
+
+    & > .default-button {
+      margin-top:20px;
+      padding:15px;
+      width:100%;
+    }
+  }
+}
+
+@media (min-width:800px) {
+  .login-container {
+
+    .container {
+      width:auto;
+    }
+
+    & > div > form {
+  
+      & > .input {
+        width:300px;
+      }
+  
+      & > .default-button {
+        width:250px;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@import '../../../../../../styles/containers.scss';
+@import '../../../../../../styles/colors.scss';
+
+.to-do-list > .list {
+  margin:35px 0px;
+  padding:20px 0px;
+  width:100%;
+
+  & > .task {
+    align-items:center;
+    background:white;
+    display:flex;
+    position:relative;
+    margin-bottom:20px;
+
+    & > .text {
+      @extend %no-select;
+      cursor:grabbing;
+      font-size:14px;
+      padding-right:60px;
+      width:100%;
+      word-wrap:break-word;
+    }
+
+    & > .check-box {
+      display:none;
+    }
+  }
+}
+
+@media (min-width:270px) {
+  .to-do-list > .list {
+
+    & > .task {
+
+      & > .check-box {
+        display:block;
+        margin-right:15px;
+      }
+
+    }
+  }
+}
+
+@media (min-width:380px) {
+  .to-do-list > .list {
+  
+    & > .task {
+  
+      & > .text {
+        font-size:16px;
+        width:300px;
+      }
+    }
+  }
+  
+}

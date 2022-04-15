@@ -1,0 +1,12 @@
+@import '../../styles/colors.scss';
+
+.modal {
+  background:$black-for-modal;
+  height:100vh;
+  left:0px;
+  opacity:.8;
+  position:fixed;
+  top:0px;
+  width:100%;
+  z-index:99;
+}

@@ -1,0 +1,27 @@
+@import '../../../../styles/containers.scss';
+@import '../.././../../styles/effects.scss';
+@import '../../../../styles/colors.scss';
+
+.good-things-container {
+  & > .circles-of-slide-container {
+    @include flex(row, center, center);
+    bottom:-150px;
+    padding:15px;
+    position:absolute;
+    width:100%;
+  
+    & > .circle {
+      @extend %less-opacity-on-active-or-hover;
+      background:$light-gray;
+      border-radius:100px;
+      cursor:pointer;
+      height:29px;
+      margin-right:20px;
+      width:29px;
+    }
+
+    & > .circle.selected {
+      background:$main-green;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+@import '../../styles/containers.scss';
+@import '../../styles/effects.scss';
+@import '../../styles/colors.scss';
+
+.login-container, .sign-up-container {
+  @include flex(row, null, top);
+  @extend %align-x-and-y;
+  background:white;
+  height:550px;
+  margin-top:50px;
+  opacity:0;
+  padding:40px;
+  position:fixed;
+  transition:margin-top .3s, opacity .3s;
+  width:100%;
+  z-index:100;
+
+  & >  .girl-image {
+    display:none !important;
+    height:231px;
+    margin-right:20px;
+    width:231px;
+  }
+
+  & > div > .title-container {
+    margin:50px 0px;
+
+    & > .title {
+      font-size:30px;
+      margin:5px 0px;
+    }
+
+    & > .sub-title {
+      color:$main-green;
+      font: {
+        size:20px;
+        weight:400;
+      }
+      margin:0px;
+    }
+  }
+
+  & > .close {
+    @extend %less-opacity-on-active-or-hover;
+    font: {
+      size:20px;
+      weight:600;
+    }
+    position:absolute;
+    right:20px;
+    top:20px;
+  }
+}
+
+@media (min-width:800px) {
+  .login-container, .sign-up-container {
+    width:800px;
+  
+    & >  .girl-image {
+      display:block !important;
+    }
+  
+    & > div > .title-container {
+      margin:50px 0px;
+  
+      & > .title {
+        font-size:50px;
+        margin:5px 0px;
+      }
+  
+      & > .sub-title {
+        font-size:40px;
+      }
+    }
+  }
+}
+
+@media (max-height:550px) {
+  .login-container, .sign-up-container {
+    height:400px;
+  
+    & >  .girl-image {
+      display:block;
+    }
+
+    &  > div > .title-container {
+      margin:10px 0px;
+  
+      & > .title {
+        font-size:25px;
+        margin:5px 0px;
+      }
+  
+      & > .sub-title {
+        color:$main-green;
+        font: {
+          size:20px;
+          weight:400;
+        }
+        margin:0px;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import '../../styles/containers.scss';
+@import '../../styles/colors.scss';
+
+.good-things-container {
+  display:none;
+}
+
+@media (min-width:290px) {
+  .good-things-container {
+    @include flex(row, center, center);
+    position: relative;
+    width:100%;
+  
+    & > .background-green {
+      background:$main-green;
+      border-radius:10px;
+      height:520px;
+      margin-top:70px;
+      padding:30px 50px;
+      width:1080px;
+  
+      & > h1 {
+        color:white;
+        font-size:35px;
+      }
+    }
+  }
+}
+
+@media (min-width:440px) {
+  .good-things-container {
+    & > .background-green {
+      & > h1 {
+        font-size:48px;
+      }
+    }
+  }
+}
+
+@media(min-width:1300px) {
+  .good-things-container {
+    @include flex(row, center, center);
+    position: relative;
+    width:100%;
+
+    & > .background-green {
+      background:$main-green;
+      border-radius:10px;
+      height:520px;
+      margin-top:70px;
+      padding:30px 50px;
+      width:1080px;
+
+      & > h1 {
+        color:white;
+        font-size:48px;
+      }
+    }
+  }
+}

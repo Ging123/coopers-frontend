@@ -1,0 +1,8 @@
+@import '../../styles/effects.scss';
+
+.default-button {
+  @extend %less-opacity-on-active-or-hover;
+  border:none;
+  font-weight:600;
+  padding:10px 30px;
+}

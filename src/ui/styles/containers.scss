@@ -1,0 +1,43 @@
+@mixin flex($direction, $justify-content:null, $align-items:null) {
+  align-items:$align-items;
+  display:flex;
+  flex-direction:$direction;
+  justify-content:$justify-content;
+}
+
+%align-x-and-y {
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+%align-x {
+  left:50%;
+  transform:translateX(-50%);
+}
+
+%align-y {
+  top:50%;
+  transform:translateY(-50%);
+}
+
+%flex-column, %flex-row {
+  display:flex;
+}
+
+%flex-column {
+  flex-direction:column;
+}
+
+%flex-row {
+  flex-direction:row;
+}
+
+%no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+   user-select: none; /* Non-prefixed version, currently*/
+}

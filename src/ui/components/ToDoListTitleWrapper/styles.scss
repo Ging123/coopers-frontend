@@ -1,0 +1,22 @@
+@import '../../styles/containers.scss';
+
+.to-do-list-title-wrapper {
+  height:420px;
+  margin-top:90px;
+  position:relative;
+  width:100%;
+  z-index:0;
+
+  & > .black-background {
+    background:black;
+    height:100%;
+    transform:skewY(-5deg);
+    width:100%;
+  }
+
+  & > .to-do-list-title-and-sub-title {
+    @extend %align-x-and-y;
+    @include flex(column, center, center);
+    position:absolute;
+  }
+}

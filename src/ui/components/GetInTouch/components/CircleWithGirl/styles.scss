@@ -1,0 +1,39 @@
+@import '../../../../styles/containers.scss';
+@import '../../../../styles/colors.scss';
+
+
+.circle-with-girl-wrapper {
+  display:none;
+
+  & > .green-rectangle {
+    @extend %align-x;
+  }
+
+  & > .girl {
+    @extend %align-x;
+  }
+}
+
+@media(min-width:575px) {
+  .circle-with-girl-wrapper {
+    display:block;
+    position:relative;
+  
+    & > .green-rectangle {
+      background:$main-green;
+      height:23px;
+      position:absolute;
+      left:33%;
+      top:-63px;
+      width:166px;
+    }
+  
+    & > .girl {
+      border-radius:1000px;
+      height:225px;
+      position:absolute;
+      top:-170px;
+      width:225px;
+    }
+  }
+}

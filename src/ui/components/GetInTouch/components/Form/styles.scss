@@ -1,0 +1,29 @@
+@import '../../../../styles/containers.scss';
+@import '../../../../styles/colors.scss';
+
+.get-in-touch > .form {
+  
+  & > .name {
+    margin:40px 0px 20px 0px;
+  }
+
+  & > .email-and-telephone-wrapper {
+    @extend %flex-row;
+    margin-bottom:20px;
+    
+    & > .email {
+      margin-right:25px;
+      width:50%;
+    }
+
+    & > .telephone {
+      width:50%;
+    }
+  }
+
+  & > .send-email-button {
+    margin-top:35px;
+    padding:15px;
+    width:100%;
+  }
+}

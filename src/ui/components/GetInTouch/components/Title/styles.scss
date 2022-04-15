@@ -1,0 +1,23 @@
+@import '../../../../styles/containers.scss';
+
+.get-in-touch-title-container {
+  @include flex(row, null, center);
+  margin-top:40px;
+  
+  & > .title {
+    font-size:20px;
+    margin:0px 0px 0px 30px;
+    width:100%;
+  }
+}
+
+@media (min-width:320px) {
+  
+.get-in-touch-title-container {
+
+  & > .title {
+    font-size:26px;
+    width:166px;
+  }
+}
+}

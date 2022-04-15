@@ -1,0 +1,12 @@
+.post > .cooper-icone {
+  display:none;
+}
+
+@media (min-width:410px) {
+  .post > .cooper-icone {
+    display:block;
+    position:absolute;
+    right:15px;
+    top:173px;
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../../../../../styles/containers.scss";
+
+.check-box {
+  border:1px solid gray;
+  border-radius:100px;
+  cursor:pointer;
+  height:24px;
+  position:relative;
+  width:24px;
+
+  & > .checked-icone {
+    @extend %align-x-and-y;
+    pointer-events:none;
+    position:absolute;
+  }
+}

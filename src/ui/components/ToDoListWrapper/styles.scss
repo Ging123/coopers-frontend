@@ -1,0 +1,42 @@
+@import '../../styles/containers.scss';
+@import '../../styles/colors.scss';
+
+.to-do-list-wrapper {
+  @include flex(row, center);
+  margin-top:120px;
+  padding: 0px 20px;
+  position:relative;
+
+  & > .to-do-list + .to-do-list {
+    margin-left:30px;
+  }
+
+  & > .drag-object {
+    display:none;
+  }
+
+  & > .drag-object {
+    @extend %no-select;
+    background:white;
+    box-shadow:0px 4px 12px $light-black;
+    cursor:grabbing;
+    display:block;
+    padding:15px;
+    overflow-x:hidden;
+    position:fixed;
+    text-overflow:ellipsis;
+    width:300px;
+    white-space:nowrap;
+  }
+}
+
+@media (max-width:950px) {
+  .to-do-list-wrapper {
+    @include flex(column, center, center);
+
+    & > .to-do-list + .to-do-list {
+      margin-top:20px;
+      margin-left:0px;
+    }
+  }
+}

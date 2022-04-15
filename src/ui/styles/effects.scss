@@ -1,0 +1,46 @@
+@import '../styles/colors.scss';
+
+%less-opacity-on-active-or-hover {
+  cursor:pointer;
+
+  &:hover {
+    opacity:.9;
+  }
+
+  &:active {
+    opacity:.7;
+  }
+}
+
+%darker-on-active-or-hover {
+  cursor:pointer;
+
+  &:hover {
+    filter:brightness(95%);
+  }
+
+  &:active {
+    filter:brightness(85%);
+  }
+}
+
+%green-on-active-or-hover {
+  cursor:pointer;
+
+  &:hover {
+    color:$main-green;
+    filter:brightness(95%);
+  }
+
+  &:active {
+    filter:brightness(85%);
+  }
+}
+
+%underline-on-hover {
+  cursor:pointer;
+
+  &:hover {
+    text-decoration:underline;
+  }
+}

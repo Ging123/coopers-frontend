@@ -1,0 +1,25 @@
+@import '../../../../styles/containers.scss';
+@import '../../../../styles/effects.scss';
+
+.coopers-text {
+  @include flex(row, center, center);
+  @extend %green-on-active-or-hover;
+  font-size:20px;
+
+  & > svg {
+    height:25px;
+    margin-right:5px;
+    width:25px;
+  }
+}
+
+@media (min-width:950px) {
+  .coopers-text {
+    font-size:25px;
+
+    & > svg {
+      height:35px;
+      width:35px;
+    }
+  }
+}

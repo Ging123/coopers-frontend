@@ -1,0 +1,17 @@
+@import '../../../../styles/containers.scss';
+
+.green-rectangle {
+  @extend %align-x;
+  display:none;
+}
+
+@media (min-width:540px) {
+  .need-help > .green-rectangle {
+    bottom:0px;
+    display:block;
+    height:41px;
+    position:absolute;
+    width:511px;
+    z-index:2;
+  }
+}

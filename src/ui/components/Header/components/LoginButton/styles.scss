@@ -1,0 +1,10 @@
+.header > .login-button {
+  display:none;
+}
+
+@media (min-width:950px) {
+  .header > .login-button {
+    display:block;
+    z-index:2;
+  }
+}

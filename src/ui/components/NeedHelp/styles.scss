@@ -1,0 +1,51 @@
+@import '../../styles/containers.scss';
+
+.need-help {
+  background:black;
+  height:300px;
+  margin-top:80px;
+  position:relative;
+  width:100%;
+
+  & > .text {
+    @extend %align-x-and-y;
+    color:white;
+    position:absolute;
+    text-align:center;
+    z-index:2;
+
+    & > h1 {
+      font-size:30px;
+    }
+
+    & > .rights {
+      font-size:14px;
+    }
+  }
+}
+
+@media (max-width:355px) {
+  .need-help {
+    & .text {
+
+      & > h1 {
+        font-size:20px;
+      }
+    }
+  }
+}
+
+@media (min-width:400px) {
+  .need-help {
+    & > .text {
+      
+      & > h1 {
+        font-size:35px;
+      }
+      
+      & > .rights {
+        font-size:16px;
+      }
+    }
+  }
+}

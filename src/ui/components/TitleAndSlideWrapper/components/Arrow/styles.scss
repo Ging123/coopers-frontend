@@ -1,0 +1,14 @@
+@import '../../../../styles/containers.scss';
+
+.title-and-slide-wrapper > .arrow {
+  @extend %align-x;
+  display:none;
+}
+
+@media (min-width:1100px) {
+  .title-and-slide-wrapper > .arrow {
+    bottom:15px;
+    display:block;
+    position:absolute;
+  }
+}

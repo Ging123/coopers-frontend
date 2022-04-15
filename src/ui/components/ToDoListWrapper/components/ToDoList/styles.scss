@@ -1,0 +1,78 @@
+@import '../../../../styles/effects.scss';
+@import '../../../../styles/colors.scss';
+
+.to-do-list {
+  align-self:center;
+  box-shadow:0px 4px 12px $light-black;
+  padding:40px 20px;
+  position:relative;
+  width:100%;
+
+  & > .rentagle {
+    height:20px;
+    left:0px;
+    position:absolute;
+    top:0px;
+    width:100%;
+  }
+  
+  & > .title {
+    font-size:30px;
+    text-align:center;
+    margin:15px 0px;
+  }
+
+  & > .sub-title {
+    font-size:18px;
+    text-align:center;
+  }
+
+  & > .add-icone {
+    cursor:pointer;
+    color:white;
+    display:none;
+    font-size:40px;
+    right:5px;
+    position:absolute;
+    top:-10px;
+  }
+
+  &:hover > .add-icone {
+    display:block;
+  }
+
+  & > .erase-all-button {
+    font-size:24px !important;
+    width:100%;
+  }
+}
+
+@media (min-width:380px) {
+  .to-do-list {
+    width:380px;
+  }
+}
+
+@media (min-width:400px) {
+  .to-do-list {
+    
+    & > .title {
+      font-size:40px;
+    }
+  
+    & > .sub-title {
+      font-size:24px;
+    }
+  
+    & > .erase-all-button {
+      font-size:24px !important;
+      width:100%;
+    }
+  }
+}
+
+@media (min-width:950px) {
+  .to-do-list {
+    align-self:flex-start;
+  }
+}
